@@ -256,7 +256,6 @@ footer a:hover {
   outline: none;
 }
 
-/* Responsive Product Item Fade-in Animation */
 .product-item {
   opacity: 0;
   transform: translateY(20px);
@@ -334,24 +333,24 @@ footer a:hover {
   animation-play-state: paused;
 }
 
-/* Responsive Queries */
-@media (max-width: 900px) {
-  .content-wrapper {
-    flex-direction: column;
-    padding: 0 1rem;
-  }
-
-  aside {
-    margin-left: 0;
-    max-width: 100%;
-    order: 3;
+@media (max-width: 600px) {
+  #short-website-descriprion-container {
+    float: none;
+    width: 100%;
   }
 
   #short-website-descriprion-container img {
     float: none;
-    display: block;
     width: 100%;
-    margin: 1rem auto;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+    display: block;
+  }
+
+  #short-website-descriprion-container p {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 
   nav ul {
@@ -360,29 +359,31 @@ footer a:hover {
     gap: 0.5rem;
   }
 
-  nav ul li a {
-    font-size: 1rem;
-    padding: 0.5rem;
-    display: block;
-    text-align: center;
-    width: 100%;
-  }
-
   header h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
-  header h2, header h3 {
-    font-size: 1.2rem;
+  main, aside {
+    padding: 1rem;
   }
 
-  video {
-    width: 100%;
-    height: auto;
+  aside {
+    max-width: 100%;
+    margin-left: 0;
+    order: 2;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 1rem;
   }
 
   #product-list-container ul li {
-    width: 45%;
+    width: 100%;
+  }
+
+  .carousel-img {
+    width: 120px;
   }
 }
 

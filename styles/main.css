@@ -100,15 +100,17 @@ nav ul li a:focus {
     float: right;
     width: 50%;
 }
-#short-website-descriprion-container img{
-  float: left;
-  width: 50%;
-  max-width: 400px;
-  margin: 0 1.5rem 1.2rem 0;
-  border: 3px solid #770202;
+
+#photos-container img,
+#short-website-descriprion-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
   border-radius: 8px;
-  shape-outside: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  border: 3px solid #770202;
 }
+
 
 #short-website-descriprion-container p {
   font-style: italic;

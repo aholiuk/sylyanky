@@ -344,7 +344,7 @@ footer a:hover {
     width: 100%;
     max-width: 100%;
     margin: 0 0 1rem 0;
-    display: block;
+    display: grid;
   }
 
   #short-website-descriprion-container p {
